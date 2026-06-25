@@ -1,0 +1,25 @@
+<!--những cái slash kiểu /public/logo ===> path-->
+<!--slash (/ \) ==> path seperature 
+==> indicate a break in text between folder and file names
+VD: naomis-file ==> đến directory tên naomis-file
+naomis/file => có 1 file tên file nằm trong file tên naomis
+-->
+
+<!--single dot (.)
+===> current directory
+==> ensure the path is a relative path (Đại diện cho thư mục hiện tại VD: ./pages/about.html)
+two dots (..) ==> parent directory => tiếp cận đến file ngoài file hiện tại
+
+VD:
+my-app/
+    ==> public/
+        +) favicon.ico
+        +) index.html
+    ==> src/
+        +) index.css
+        +) index.js
+
+Đang ở public/index.html
+=> muốn đến favicon.ico => đang ở vị trí đấy => dùng "." => relative path => ./favicon.ico
+=> muốn đến index.css => khác file ==> phải dùng ".." để về parent my-app => xong src => ../src/index.css
+-->

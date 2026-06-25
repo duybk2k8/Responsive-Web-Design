@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="./styles.css" />
+#link là thẻ HTML dùng để liên kết tài nguyên bên ngoài, ví dụ như tệp CSS, tệp JavaScript, hoặc favicon.
+#rel là mối quan hệ giữa tài nguyên được liên kết và tài nguyên hiện tại. Trong ví dụ trên, "stylesheet" chỉ ra rằng tệp được liên kết là một tệp CSS.
+#href là để mở tài nguyên bên ngoài 
+#./ ở trước link là chỉ cùng thư mục với html
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examples of the link element</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+  rel="stylesheet"
+/>
+#preconnect giúp kết nối sớm và nhanh hơn
+#crossorigin là thuộc tính của thẻ link, để web sử dụng tài nguyên k gặp vấn đề
+<link rel="icon" href="favicon.ico" />
+#favicon là biểu tượng nhỏ hiển thị trên tab trình duyệt

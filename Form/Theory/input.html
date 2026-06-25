@@ -1,0 +1,25 @@
+<form method="" action="url-goes-here">
+    <input type="text">
+</form>
+<!--action will specify where the form data will be sent-->
+<!--type => expected data type from user-->
+<!--method là phương thức gửi có 2 loại
+1) Get => dữ liệu công khai, đính thẳng lên url (như khi tra gg)
+2) Post=> giữ kín, cho form nhạy cảm-->
+
+<form action="">
+  <label>
+    Full Name:
+    <input type="text" />
+  </label>
+</form>
+<!--label là tiêu đề cột input
+=> nest input in label => implicit association (link without defined with attributes)-->
+<!--want to associate => for-->
+<form action="">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" placeholder="example@gmail.com"/>
+</form>
+<!--explicit association => for & id need to be the same-->
+
+<!--additional hint => placeholder-->

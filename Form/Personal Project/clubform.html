@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">HUS High School for Gifted Students Club Registration</h1>
+    <p id="description">This is the form for incoming students in HSGS to register for HSGS's Clubs! Choose carefully what suits you the best!</p>
+    <form id="survey-form">
+      <fieldset>
+            <legend>Personal Information</legend>
+            <label id="name-label">Name
+            <input 
+            type="text" 
+            id="name" 
+            required
+            placeholder="e.g. Darwin Bui"/>
+            </label> <br>
+
+            <label id="email-label">Email
+            <input 
+            type="email" 
+            id="email" 
+            required
+            placeholder="e.g. duy2@gmail.com"/>
+            </label> <br>
+
+            <label id="number-label">Birth Year (optional)
+            <input 
+            type="number" 
+            id="number"
+            placeholder="e.g. 2008"
+            min="1900"
+            max="2050"
+            />
+            </label> <br>
+        </fieldset>
+
+      <fieldset>
+          <legend>Your specialization</legend>
+
+          <select name="specialization" id="dropdown">
+            <option value="mathematics">Mathmematics</option>
+            <option value="informatics">Informatics</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+          <legend>Your Class</legend>
+          <input id="a1" type="radio" name="class" value="class" />
+          <label for="a1">A1</label>
+          
+          <input id="a2" type="radio" name="class" value="class" />
+          <label for="a2">A2</label>
+
+          <input id="a3" type="radio" name="class" value="class" />
+          <label for="a3">A3</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Clubs Enrolment (Select all that apply)</legend>
+        <input
+        type="checkbox"
+        id="HVSG"
+        name="choice"
+        value="HVSG"
+        />
+        <label for="HVSG">HVSG - Volunteering Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HSDC"
+        name="choice"
+        value="HSDC"
+        />
+        <label for="HSDC">HSDC - Debate Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HAC"
+        name="choice"
+        value="HAC"
+        />
+        <label for="HAC">HAC - Art Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HMCC"
+        name="choice"
+        value="HMCC"
+        />
+        <label for="HMCC">HMCC - Chess Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HPS"
+        name="choice"
+        value="HPS"
+        />
+        <label for="HPS">HPS - Photography Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="LEAF"
+        name="choice"
+        value="LEAF"
+        />
+        <label for="LEAF">LEAF - Diplomatic Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HEC"
+        name="choice"
+        value="HEC"
+        />
+        <label for="HEC">HEC - English Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HAPAC"
+        name="choice"
+        value="HAPAC"
+        />
+        <label for="HAPAC">HAPAC - Applied Physics & Astronomy Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="SPOFY"
+        name="choice"
+        value="SPOFY"
+        />
+        <label for="SPOFY">SPOFY - Applied Science Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HBA"
+        name="choice"
+        value="HBA"
+        />
+        <label for="HBA">HBA - Biology Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HChO"
+        name="choice"
+        value="HChO"
+        />
+        <label for="HChO">HChO - Chemistry Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HCC"
+        name="choice"
+        value="HCC"
+        />
+        <label for="HCC">HCC - Code Camp</label> <br>
+
+        <input
+        type="checkbox"
+        id="HB"
+        name="choice"
+        value="HB"
+        />
+        <label for="HB">HB - Basketball Club</label> <br>
+      
+        <input
+        type="checkbox"
+        id="HBC"
+        name="choice"
+        value="HBC"
+        />
+        <label for="HBC">HBC - Badminton Club</label> <br>
+
+        <input
+        type="checkbox"
+        id="HFF"
+        name="choice"
+        value="HFF"
+        />
+        <label for="HFF">HFF - Football Club</label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="exp">List all of your experience related to each club you've applied.</label><br>
+        <textarea cols="150" rows="30" name="exp" id="exp"></textarea>
+      </fieldset>
+      
+      <p>If you have done your application, please submit. Result of each club will be sent individually at a different time period. Thank you for your registration! </p>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

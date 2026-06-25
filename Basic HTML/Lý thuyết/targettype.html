@@ -1,0 +1,31 @@
+<!--có nhiều loại target, ví dụ:-->
+<a href="https://freecodecamp.org" target="_blank">Visit freeCodeCamp</a>
+<!--
+1) _self
+==> open link in current browsing context
+=> current tab.window
+=> nếu k set target thì nó sẽ tự default là self
+-->
+
+<!--
+2) _blank
+==> open link in a new browsing context
+=> new tab, new window
+-->
+
+<!--
+3) _parent 
+==> open link in the parent of current context
+=> nếu target="_parent" ở trong iframe, khi bấm vào iframe nó sẽ k hiện ở phần "con" (khung nhỏ) mà hiện ở trang "cha" (khung lớn => toán bộ web sẽ chuyển qua link đó)
+=> sẽ giống self nếu link nằm trên web bình thường, nếu ở iframe thì self sẽ mở trong đó luôn, parent bung ra
+-->
+
+<!--
+4) _top => y hệt _parent (parent of parent => always open in full browser tab)
+Khác nhau:
+Trang lớn 1 (trang ông nội)
+Trang iframe 1 (trang bố)
+Trang iframe 1.1 (trong trang bố có trang con)
+_parent => chỉ chiếm iframe 1
+_top => chiếm cả trang lớn 1
+-->

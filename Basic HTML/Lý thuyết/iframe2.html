@@ -1,0 +1,39 @@
+<!--accelerometer => sử dụng cảm biến chuyển động => nhận ra cần xoay màn hình/nghiêng mh
+==> chỉ biết người dùng có đang lắc máy k-->
+
+<!--autoplay => tự phát video auto-->
+
+<!--clipboard-write => write data to users clipboard ==> cho copy link-->
+
+<!--encrypted-media ==> protect video-->
+
+<!--gyroscope ==> gain access to device motion and orientation sensors
+===> biết quay 1 góc chính xác bn => phục vụ cho 3D-->
+
+<!--web-share =>...-->
+
+<!--referrerpolicy==>
+bảo vệ quyền riêng tư (Privacy) của người dùng và bảo mật dữ liệu của chính website của bạn.-->
+
+<!--strict-origin-when-cross-origin ==> có hiện origin nhưng k hiện tên miền phía sau-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Videos in an iframe</title>
+  </head>
+  <body>
+    <h1>iframe Video Display</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/I0_951_MPE0"
+      allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+
+    </iframe>
+  </body>
+</html>

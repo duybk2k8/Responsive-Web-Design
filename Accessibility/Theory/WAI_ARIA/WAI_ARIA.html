@@ -1,0 +1,16 @@
+<!--WAI_ARIA Web Accessibility Initiative - Accessible Rich Internet Allplications
+==> specification enhances acc for dynamic content
+==> specific rules for making dynamic & interactive contant
+==> work by introducing a set of attribute add to HTML ==> additional sematic in4
+-->
+<div role="button">Click Me</div>
+<!--role do not have function
+==> need CSS + JavaScript-->
+<h2 id="header-id">About freeCodeCamp</h2>
+<button id="button-id" aria-labelledby="header-id button-id">Learn More</button>
+<!--aria-labelledby connect an element to specific label-->
+<!--tên của nút dc ghép từ nội dung 2 phần tử "About FCC" "Learn more"
+==> screen reader sẽ đọc cả 2 ==> dễ hiểu hơn-->
+
+<!--Use WAI-ARIA only when HTML falls short
+=> chỉ dùng khi html chưa đủ để diễn tả chức năng (Ví dụ emoji mà screen reader k đọc dc ==> can aria-labelled)-->

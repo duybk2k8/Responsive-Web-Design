@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="the 7-color rubic">
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <label for="card-name">
+                Your name <span aria-hidden="true">*</span>
+
+            </label>
+            <input
+            id="card-name" 
+            name="card-name"
+            type="text"
+            required>
+        </form>
+
+        <form>
+            <label for="card-email">
+                Your email <span aria-hidden="true">*</span>
+
+            </label>
+            <input
+            id="card-email" 
+            name="card-email"
+            type="text"
+            required>
+        </form>
+
+        <form>
+            <label for="card-number">
+                Your card number <span aria-hidden="true">*</span>
+
+            </label>
+            <input
+            id="card-number" 
+            name="card-number"
+            type="text"
+            required
+            aria-describedby="card-number-help"> <!--aria-describedby phải nằm ở thuộc tính mô tả => input, p chỉ link th-->
+            <p id="card-number-help" >Your card should be filled 16 characters</p>
+        </form>
+        <button type="submit" action="">Submit</button>
+    </section>
+</body>
+
+</html>

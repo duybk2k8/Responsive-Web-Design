@@ -74,5 +74,30 @@ define elements with content that change dynamically
 <script src="index1.js"></script>
 
 
-<!--5. Window roles-->
+<!--5. Window roles
+==> define sub-windows (dùng cho cửa sổ nổi) => popup modal dialogues ==> alertdialog and dialog-->
+<link rel="stylesheet" href="styles.css">
+
+<button id="open-dialog">Open Dialog</button>
+
+<div id="custom-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" class="dialog">
+  <div class="dialog-content">
+    <h3 id="dialog-title">Confirm Action</h3>
+    <p>Are you sure you want to delete this file?</p>
+    <div class="dialog-actions">
+      <button id="confirm-btn">Yes</button>
+      <button id="close-dialog">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+
 <!--6. Abstract roles-->
+<!--
+1. miêu tả cấu trúc nội dung
+2. thành phần ng dùng tương tác
+3. chia vùng lớn điều hướng
+4. thông báo nd cập nhật động
+5. hộp thoại cửa sổ nổi
+6. k dùng trực tiếp-->

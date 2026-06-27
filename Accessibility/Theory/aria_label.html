@@ -1,0 +1,39 @@
+<button aria-label="Search">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<!--describe website or element with hidden context-->
+
+<input type="text" aria-labelledby="search-btn">
+<button type="button" id="search-btn">Search</button>
+<!--lấy luôn văn bản có sẵn làm nhãn reference-->
+
+<div>
+  <span id="volume-label">Volume</span>
+  <span id="volume-details">Adjust the volume level</span>
+  <input
+    type="range"
+    min="0"
+    max="100"
+    value="30"
+    aria-labelledby="volume-label volume-details">
+</div>
+<!--combining two different element-->
+
+
+<head>
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+  />
+</head>
+
+<button>
+  <i class="fa-solid fa-gear" aria-hidden="true"></i>
+  <span class="label">Settings</span>
+</button> <!--aria-hidden is to hide emoji from assisstive tech-->
+
+<button aria-describedby="delete-message">Delete</button>
+
+<p id="delete-message">Warning! All deletions are permanent.</p>
+<!--aria-describedby dùng để cung cấp thông tin giải thích thêm-->

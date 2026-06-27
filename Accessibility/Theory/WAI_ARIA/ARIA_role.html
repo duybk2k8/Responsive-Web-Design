@@ -1,0 +1,78 @@
+<!--
+ARIA - Accessible Rich Internet Applications
+==> specify sematic meaning of html elements
+=> some sematic html altrady have ARIA role (button => ARIA role of button)
+non-sematic like div ==> role ="ARIA role"-->
+<link rel="stylesheet" href="styles1.css">
+<div class="alert" id="exp-warning" role="alert">
+    <span class="hidden">Your log in session will expire in 3 minutes.</span>
+</div>
+<!--role just inform tech the purpose of the element
+=> no add functionality-->
+
+<!--6 main categories of ARIA Roles
+1. Document structure roles
+=> define overall structure of the web page => help tech understand rela between sections + help navigate content
+=> not used in modern web dev vì đã support sematic html
+=> chỉ dùng khi nó k có equivalent sematic element: toolbar, tooltip, feed, math, presentation, none, and note
+VÍ DỤ:
+-->
+<link rel="stylesheet" href="styles2.css">
+<div role="math" aria-label="x squared + y squared = 3">
+    x<sup>2</sup> + y<sup>2</sup> = 3
+</div>
+
+<!--2. Widget roles
+==> define the purpose and fuction of interactive elements 
+Example: scrollbar, searchbox, separator (when focusable), slider, spinbutton, switch, tab, tabpanel, and treeitem
+-->
+<link rel="stylesheet" href="styles3.css">
+<div class="search-container" role="search"> <!--role là cảnh báo đây là khu vực tìm kiếm-->
+    <label for="searchbox" class="visually-hidden">Search</label> <!--visually hidden là ng dùng k thấy nhưng screen reader vẫn đọc dc-->
+    <div
+    id="searchbox"
+    class="searchbox"
+    role="searchbox"
+    aria-label="Search the site"
+    tabindex="0" 
+    contenteditable="true">
+    </div> <!--tabindex cho phép ng dùng nhấn tab đến ô tìm kiếm
+    contenteditable là cho phép nhập văn bản ==> giống input-->
+</div>
+
+<!--3. Landmark roles
+==>classify and label primary sections of a web page
+==> banner, complementary, contentinfo, form, main, navigation, region, and search (đều có corresponding html => nên dùng hơn: header, footer, aside, form, main, nav, section, and search)
+ -->
+<link rel="stylesheet" href="styles4.css">
+
+
+<div role="banner" class="site-banner">
+  <h1>Accessible Web Design</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!--4. Live region roles
+define elements with content that change dynamically
+==> alert, log, marquee, status, and timer-->
+<link rel="stylesheet" href="styles5.css">
+
+<div class="status-demo">
+  <button id="update-status-btn">Check Status</button>
+  <div id="status-msg" role="status" class="status-message">
+    No updates yet.
+  </div>
+</div>
+
+<script src="index1.js"></script>
+
+
+<!--5. Window roles-->
+<!--6. Abstract roles-->

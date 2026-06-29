@@ -1,0 +1,33 @@
+/*CSS rule ==> 2 parts: selector + declaration
+Basic syntax:
+selector {
+    property: value;
+} 
+
++) Selector: identify and target specific HTML elements for styling
+E.g: type, class, ID selectors
+
++) {} ===> declaration block: apply set of styles for a givien selector
+===> Each declaration block have series of declarations => each declaration: a property + value
+
++) property: CSS identifier ==> specify which feature is being styled
+E.g: background-color
+
++) value: specific setting applied to the property
+E.g: purple
+
++) Sau property phải có ":" sau value phải có ";"
+
+*/
+p {
+    color:blue;
+}
+/* ở đây selector là type*/
+
+#title, .subheading {
+    color: navy;
+}
+/*
+id ==> #
+class ==> . 
+*/

@@ -1,0 +1,8 @@
+figure img {
+    border: 4px solid red;
+}
+/* select all image elements inside figure element ==> apply red
+(a space) is used between the parent and child selector
+==> figure is parent, img is child */
+/*child_com chỉ tô những child mà là direct (k nest trong nữa)
+Còn descendant là tô hết mặc dù k ph direct child */

@@ -1,0 +1,5 @@
+h2 ~ p {
+    color: green
+}
+/* khác với + chỉ lấy đúng dc 1 phần tử đứng sau
+~ lấy hết phần tử p trong và dưới h2*/

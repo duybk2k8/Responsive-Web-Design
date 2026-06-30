@@ -1,0 +1,6 @@
+img + figcaption {
+    border: 4px solid black;
+}
+/*tô cái đằng sau img (+)
+specify là figcaption 
+===> chọn tô figcaption đứng sau img*/ 

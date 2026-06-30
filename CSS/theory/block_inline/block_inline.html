@@ -1,0 +1,27 @@
+<!--block-level elements
+phần tử khối ==> chiếm hết bề ngang
+==> always start  new line, push other to new line
+==> common: div elements, paragraphs, headings, ordered lists, unordered lists, and section elements-->
+<p style="border: 2px solid red;">
+  First paragraph
+</p>
+<p>Second paragraph</p> <!--p là block => đẩy xuống dòng mới-->
+
+<!--inline elements
+==> k cách dòng
+==> common: span (k có ý nghĩa đặc biệt, chỉ đánh dấu để CSS tác động nếu có), a, img
+-->
+<p>This is a
+  <span style="color: red; border: 2px solid green;">red</span>
+  word inside a paragraph.
+</p>
+
+<!--inline block
+inline k thể size control, còn inline-block thì có
+-->
+<link href="block_inline.css" rel="stylesheet">
+
+<div class="container">
+  <span class="inline-block-element element1">Inline-Block</span>
+  <span class="inline-block-element element2">Inline-Block</span>
+</div>

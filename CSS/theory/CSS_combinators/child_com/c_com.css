@@ -1,0 +1,4 @@
+.container > p {
+    color: blue
+}
+/*target the DIRECT child of "container" class => bọn nest với div k dc consider*/

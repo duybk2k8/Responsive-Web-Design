@@ -1,0 +1,111 @@
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+/*font family là font của cả trang */
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/*cho font h1 to lên
+thường nếu k cho margin-top thì nó sẽ tự default cách ==> để 0 để cho cân
+margin bottom để tạo khoảng vs tiêu đề
+---> margin là khoảng trống bên ngoài phần tử ==> khoảng cách phần tử đó với các phần tử xung quanh / mép phần tử cha
+---> padding là khoảng cách từ viền đến chỗ nội dung bắt đầu dc phép hiển thị
+*/
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+/*text-align nhằm căn chỉnh nội dung: left, center, right, justify (căn đều 2 bên làm sao mép trái mép phải = nhau)*/
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+/*margin để đẩy hộp ra giữa
+còn padding là để đẩy nội dung ở trong hộp ra xa viền*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px
+}
+/*
+- thẻ img ban đầu hoạt động inline ==> nằm cùng dòng với chữ (display: inline)
+==> phải thành block để có dòng riêng
+- margin đẩy lên trên vì ban đầu khoảng cách sẽ đều
+*/
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+/*ghi đè font lên thì h1, h2 sẽ có font khác*/
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+address {
+  font-style: normal;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}

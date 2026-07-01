@@ -1,0 +1,6 @@
+/*dùng 3 values ==> cái đầu top, cái 2 left right, cái 3 bottom */
+p {
+  margin: 10px 20px 30px;
+}
+
+

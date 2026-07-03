@@ -1,0 +1,33 @@
+/*
+Syntax:
+A:B {
+    property: value
+}
+*/
+
+/*pseudo-class là từ khóa  bắt đầu bằng : ==> chọn phần tử khi nó ở trạng thái hoặc vị trí đặc biệt*/
+
+/* Normal state (unvisited link) */
+a:link { 
+  color: red;
+}
+
+/* Visited link */
+a:visited {
+  color: green;
+}
+
+/* Hover state */
+a:hover {
+  color: green;
+}
+
+/* Focus state */
+a:focus {
+  outline: 2px solid orange;
+}
+
+/* Active state */
+a:active {
+  color: pink;
+}

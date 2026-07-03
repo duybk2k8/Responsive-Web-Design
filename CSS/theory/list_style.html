@@ -1,0 +1,45 @@
+<!--list-style-type là chỉnh kiểu bullet
+VD: discs, circles, or squares-->
+<ul style="list-style-type: square;">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<!--list-style-position controls position của bullet or num trong list items content
+==> inside and outside-->
+<ul style="list-style-position: inside;">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+<ul style="list-style-position: outside;">
+  <li>Item 4</li>
+  <li>Item 5</li>
+  <li>Item 6</li>
+</ul>
+<!--inside là dấu bullet nằm bên trong vùng nội dung của li, outside là ngược lại-->
+
+<!--list-style-image use image as a bullet-->
+<head>
+  <style>
+    ul {
+      list-style-image: url('https://cdn.freecodecamp.org/platform/universal/freecodecamp-org-gravatar.jpeg');
+      list-style-position: inside;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</body>
+
+<!--combine cả 3-->
+<ul style="list-style: square inside url('https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg');">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>

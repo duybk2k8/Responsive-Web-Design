@@ -1,0 +1,31 @@
+<!--
+CSS Specificity
+-->
+
+<link rel="stylesheet" href="styles.css">
+
+
+<p style="color: red;">Red paragraph</p>
+<p id="color: red;">Red paragraph</p>
+<p>Other paragraph</p>
+<p>Another paragraph</p>
+<p>Yet another paragraph</p>
+
+<!--p style vẫn hiện đỏ vì inline >>> type selector in CSS-->
+
+<!--id có highest specificity
+==> id >> class >> CSS
+-->
+
+<!-- * ==> select all của CSS ==> lowest specificity-->
+
+<!--
+a) Inline 1,0,0,0
+b) ID 0,1,0,0 (internal = external)
+c) Class 0,0,1,0
+d) Type selector CSS 0,0,0,1
+e) * 0,0,0,0
+
+====> NẾU MUỐN OVERRIDE BỎ QUA SPECIFICITY
+==> !important
+-->

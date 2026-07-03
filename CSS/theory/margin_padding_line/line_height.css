@@ -1,0 +1,7 @@
+li {
+  line-height: 2; 
+}
+/*
+- Margin là sẽ coi các li là các phần tử khác nhau
+- còn line-height thì các li vẫn cùng trong p
+*/

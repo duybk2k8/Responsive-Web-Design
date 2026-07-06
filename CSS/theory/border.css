@@ -1,0 +1,8 @@
+img {
+  border-top: 10px solid red;
+  border-right: 10px dashed green;
+  border-bottom: 10px dotted blue;
+  border-left: 10px double purple;
+}
+/*dashed, dotted, double
+cách dùng khác ngoài border: outline => giống nhưng k ảnh hưởng đến layout hay dimension*/

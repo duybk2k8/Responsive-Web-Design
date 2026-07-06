@@ -1,0 +1,29 @@
+<style>
+  body {
+    background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 100px;
+  }
+</style>
+
+<!--contain là contain ảnh dc hết, có thể có khoảng trắng
+cover là cover hết cả khung-->
+
+<!--no-repeat là k có nó dup
+repeat ngang => repeat-x
+repeat dọc => repeat-y-->
+
+<!--background-position: vị trí ảnh ==> top, bottom, left, right, center / specific pixel / percentage-->
+
+<!--background-attachment ==> scroll (Default): lướt cùng content
+fixed: giữ nguyên k di chuyển-->
+
+<!--combine-->
+<style>
+  body {
+    background: center top fixed
+      url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg");
+  }
+</style>

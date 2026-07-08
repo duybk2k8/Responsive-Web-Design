@@ -1,0 +1,17 @@
+.para {
+  font-size: 20px;
+  margin-bottom: 1.5em;
+  border: 2px solid red;
+}
+
+.blue-box {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+}
+/*margin sẽ 1.5 font size của paragraph element
+nếu cha k có font size ==> auto về 16px
+
+rem luôn tỉ lệ với font size của html*/

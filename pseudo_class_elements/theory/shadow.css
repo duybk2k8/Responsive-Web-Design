@@ -1,0 +1,19 @@
+/*box-shadow: offset-x offset-y blur-radius spread-radius color inset;
+- offset-x: bóng đổ theo chiều ngang
+- offset-y: bóng đổ theo chiều dọc
+- blur-radius: độ mờ của bóng
+- spread-radius: độ lan rộng của bóng
+- color: màu của bóng
+- inset: biến bóng ngoài thành bóng trong
+*/
+
+a {
+  transition: color 1s linear;
+}
+
+.card:hover {
+  background-color: khaki;
+  transform: scale(1.1);
+  transition: transform 0.3s, background-color 0.3s ease;
+}
+/*cho nó chuyển động với scale lớn hoặc bé hơn*/

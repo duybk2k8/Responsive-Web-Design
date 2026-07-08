@@ -20,3 +20,14 @@
   transform: translateX(2px);
 }
 /*phải đúng after / before*/
+
+p::first-letter {
+  font-size: 4rem;
+}
+/*style đúng chữ đầu thôi*/
+
+li::marker{
+    color: crimson;
+    font-size: 1.5em;
+    font-weight: bold;
+}

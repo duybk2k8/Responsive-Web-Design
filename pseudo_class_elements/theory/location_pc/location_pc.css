@@ -1,0 +1,22 @@
+a:link {
+  color: magenta;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:any-link {
+  color: crimson;
+}
+/*Combination of
+.visited + .link*/
+
+section:target {
+  background-color: green;
+  border: 2px solid green;
+  padding: 10px;
+}
+/*style section mà match where user navigates to*/
+
+/*local-link => cho link mà k support any browser*/

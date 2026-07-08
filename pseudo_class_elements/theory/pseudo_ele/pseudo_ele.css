@@ -1,0 +1,22 @@
+.cta-button {
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.cta-button::after {
+  content: "⭐";
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover::after {
+  transform: translateX(2px);
+}
+/*phải đúng after / before*/

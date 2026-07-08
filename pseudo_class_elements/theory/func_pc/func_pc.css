@@ -1,0 +1,35 @@
+:is(button, a.button, input[type='submit'], input[type='reset']) {
+  background-color: darkblue;
+  color: white;
+  border: 1px solid darkblue;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+/*lấy style các phần tử chỉ share some, but not all characteristics*/
+
+:is(button, a.button, input[type='submit'], input[type='reset']):hover {
+  background-color: blue;
+  border-color: blue;
+}
+
+:where(h1, h2, h3) {
+  margin: 0;
+  padding: 0;
+}
+/*is giống where ==> is thì giữ specificity, còn where thì specificity luôn bằng 0 (ghi đè dễ dàng)*/
+
+article:has(h2) {
+    border: 2px solid hotpink;
+}
+/*chỉ style con article nào h2*/
+
+button:not(.primary){
+    background-color: grey;
+}
+/*ngược lại, style all trừ một vài exception*/

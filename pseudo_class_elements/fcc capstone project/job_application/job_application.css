@@ -1,0 +1,85 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: 2px black solid;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+}
+h1{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+}
+
+.radio-group label {
+    display: inline-block;
+    width: 300px;
+    margin-top: 0;
+}
+
+fieldset{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid green;
+}
+
+input:not([type="radio"]){
+    border-radius: 12px;
+    height: 35px;
+    width: 770px;
+    font-size: 17px;
+    padding: 5px;
+}
+
+input:focus, textarea:focus{
+  border: blue solid 2px;
+  outline: none;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+  border: solid 2px red;
+}
+
+input:valid, select:valid, textarea:valid{
+  border: solid 2px green;
+}
+
+button:hover{
+  background-color: cyan;
+}
+
+.radio-group input[type="radio"]:checked{
+  border-color: blue;
+  background-color: cyan;
+  box-shadow: 0 5px 15px black;
+}
+
+.radio-group input[type="radio"]:checked + label{
+  color: brown;
+}
+
+input:first-of-type{
+  color: pink;
+}
+
+textarea{
+    width: 750px;
+    border-radius: 12px;
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Georgia;
+    display: block;
+    margin: 20px auto;
+}

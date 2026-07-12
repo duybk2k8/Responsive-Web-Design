@@ -6,3 +6,52 @@ rgb(255, 0, 0) => full red
 
 advanced: rgba(a,b,c,d) => d là chỉ transparancy from 0 (transparent) => 1 (opaque)
 */
+
+/*
+hsl => hue, saturation, lightness
+hue: colortype ==> 0-360 : 
++) 0 => red
++) 120 => green
++) 240 => blue
+
+saturation: intensity / purity (độ tươi)=> 0-100%
++) 0% => gray
++) 100% => vivid
+
+lightness => 0-100%
++) 0%: black
++) 50%: normal
++) 100%: white
+==> hsl(hue, saturation, lightness)
+hsl(hue saturation lightness / alpha) => alpha giống rgb => transparency
+hoặc dùng hsla cũng dc:  background-color: hsla(hue, saturation, lightness, alpha);
+*/
+
+/*Hex code
+#RRGGBB => red red green green blue blue
+VD: #000000 => black
+#FFFFFF => white
+00 (lowest) ==> FF (highest)
+
+VD:
+#4CAF50 is a shade of green:
+
+4C is a low value for red.
+AF is a strong value for green.
+50 is a moderate value for blue
+*/
+
+/*Linear >< radial
+linear: 
+linear-gradient(to right, red 20%, yellow 40%, blue 80%)
+===>có thể dùng: to left, to top, to bottom, specify like 45deg
+
+radial:
+radial-gradient(ellipse at top left, red, blue);
+radial-gradient(circle, red, blue)
+
+box-shadow: offsetX offsetY blurRadius color;
+=> box-shadow: 5px 5px 5px green;
+
+box-shadow: offsetX offsetY blurRadius spreadRadius color;
+*/

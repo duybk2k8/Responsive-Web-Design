@@ -3,7 +3,7 @@ intensity range from 0 ==> 255
 rgb(0, 0, 0) => no light from any color => white
 rgb(255, 255, 255) => full light => black
 rgb(255, 0, 0) => full red
-
+===> dùng cùng 1 kiểu đơn vị
 advanced: rgba(a,b,c,d) => d là chỉ transparancy from 0 (transparent) => 1 (opaque)
 */
 

@@ -1,0 +1,54 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    background-color: #53A4CF;
+    margin: 10%;
+    border: 5px solid #2D74A8;
+    padding: 10px;
+}
+
+h1{
+    font-size: 5vh;
+    text-align: center;
+    color:#0f172a;
+}
+
+.feature-card{
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: block;
+    border: solid #95CDDD 5px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 4vh;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  width: 3vh;
+  height: 3vh;
+  cursor: pointer;
+  border: 2px solid #2D74A8;
+  border-radius: 4px;
+  background-color: #E6ECF8;
+  transition: all 0.3s;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+input[type="checkbox"]:checked{
+  background-color: #95CDDD;
+  border-color: #1549BA;
+}
+
+input[type="checkbox"]:checked::after{
+  content: "✓";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20px;
+  color: white;
+}
+
+

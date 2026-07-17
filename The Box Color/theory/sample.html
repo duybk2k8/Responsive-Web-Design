@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Margin Collapse Demo</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    padding:40px;
+}
+
+.wrapper{
+    display:flex;
+    gap:40px;
+}
+
+.box{
+    width:280px;
+}
+
+.title{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.parent{
+    background:#ffe66d;
+    border:3px solid orange;
+
+    /* Bật dòng dưới để ngăn margin collapse */
+    /* padding-top:1px; */
+
+    animation:move 2s infinite alternate;
+}
+
+.child{
+    margin-top:60px;
+    background:pink;
+    padding:20px;
+    font-weight:bold;
+}
+
+.label{
+    margin-top:15px;
+    text-align:center;
+    color:#666;
+}
+
+@keyframes move{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(20px);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+
+<div class="title">
+Parent
+</div>
+
+<div class="parent">
+
+<div class="child">
+Child<br>
+margin-top:60px
+</div>
+
+</div>
+
+<div class="label">
+Thử thêm <b>padding-top:1px</b> vào .parent
+</div>
+
+</div>
+
+</body>
+</html>

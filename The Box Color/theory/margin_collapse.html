@@ -1,0 +1,51 @@
+<style>
+  .box1 {
+    margin-bottom: 20px;
+    background-color: lightblue;
+  }
+  .box2 {
+    margin-top: 30px;
+    background-color: lightgreen;
+  }
+</style>
+
+<div class="box1">Box 1</div>
+<div class="box2">Box 2</div>
+
+<!--20<30 => cái 30 sẽ chiếm (sẽ là 30 chứ kph 50)
+    => chỉ apply với vertical chứ kph horizontal
+-->
+
+<style>
+  .parent {
+    margin-top: 40px;
+    background-color: lightyellow;
+  }
+  .child {
+    margin-top: 30px;
+    background-color: lightpink;
+  }
+</style>
+
+<div class="parent">
+  <div class="child">Child element</div>
+</div>
+<!--nó lấy cái margin 40-->
+<!--==> margin của con chạm trực tiếp vào mép trên của cha ==> sẽ gộp lại thành margin duy nhất-->
+
+<style>
+  .parent {
+    margin-top: 40px;
+    padding-top: 1px;
+    background-color: lightyellow;
+  }
+  .child {
+    margin-top: 30px;
+    background-color: lightpink;
+  }
+</style>
+
+<div class="parent">
+  <div class="child">Child element</div>
+</div>
+<!--đã có padding => k bị-->

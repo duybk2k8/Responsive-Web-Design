@@ -1,0 +1,7 @@
+div {
+  height: 200px;
+  overflow-y: hidden;
+}
+/*Nếu muốn dùng scorll:
+overflow-y: scroll;
+*/

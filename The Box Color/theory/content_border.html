@@ -1,0 +1,29 @@
+<!--
+content-box => width KHÔNG BAO GỒM padding, border, margin
+VD: width=200 padding=10 margin=20
+==> tổng content-box: 260
+
+border-box => width BAO GỒM padding, width (k bao gồm margin)
+==> tổng box: 200
+nếu k set => auto về content box-->
+<style>
+    .box {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        border: 4px solid black;
+        margin: 10px;
+    }
+
+    #red-div {
+        box-sizing: content-box;
+        background-color: red;
+    }
+
+    #blue-div {
+        box-sizing: border-box;
+        background-color: blue;
+    }
+</style>
+<div class="box" id="red-div"></div>
+<div class="box" id="blue-div"></div>

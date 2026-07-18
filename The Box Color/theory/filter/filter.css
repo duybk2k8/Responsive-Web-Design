@@ -1,0 +1,15 @@
+img{
+    filter: blue(2px);
+    filter: brightness(150%);
+    filter: grayscale(100%);
+    /*grayscale là chuyển thành đen trắng*/
+    filter: sepia(100%);
+    /*sepia là chuyển thành tông cổ điển*/
+    /*grayscale + sepia dùng %*/
+    filter: hue-rotate(90deg);
+    /*xoay tông màu*/
+
+    /*combine*/
+    filter: contrast(150%) brightness(110%) sepia(30%); 
+    /*còn contrast, invert (đảo ngược màu sắc), saturate (độ bão hòa, độ rực),...*/
+}

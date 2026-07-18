@@ -18,3 +18,12 @@ div {
 #third-div {
   background-color: #4da3b2;
 }
+
+/*
+
+flex-direction: row; /Default/ / column
+
+==> reverse ngược lại: flex-direction: row-reverse  / column reverse;
+
+
+*/

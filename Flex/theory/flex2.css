@@ -1,0 +1,55 @@
+main {
+  width: 200px;
+  display: flex;
+  border: 2px solid red;
+}
+
+div {
+  width: 80px;
+  height: 50px;
+}
+/*con div vượt quá mức con main
+==> thường sẽ tự co lại
+===> nếu muốn wrap khi nó exceed => dùng flex-wrap: wrap;*/
+
+#first-div {
+  background-color: #4d70b2;
+}
+
+#second-div {
+  background-color: #5c4db2;
+}
+
+#third-div {
+  background-color: #4da3b2;
+}
+
+/*flex-wrap 3 loại
++) nowrap: k dãn
++) wrap: dãn và rearranged nếu nó exceed
++) wrap-reverse: wrap ngược
+=>> flex-flow => shorthand (flex-direction + flex-wrap)
+
+
+justify-content
+syntax: justify-content: flex-start ==> nó sẽ xếp đầu từ trục main
++) flex-start => xếp từ đầu
++) flex-end => xếp cuối
++) center => xếp giữa
++) space-between => căn đều => căn sao cho 2 cái đầu cuối ở mép container
+|[1]----------------[2]----------------[3]|
++) space-around => căn đều => căn sao cho khoảng ở mép ngoài bằng 1 nửa kcach giữa 2 phần tử
+|----[1]--------[2]--------[3]----|
++) space-evenly => căn đều => căn sau cho khoảng cách mọi thứ = nhau
+
+align-items => căn giữa theo cross
++) tương tự: flex-start flex-end
++) stretch => kéo dài bằng chiều cao của container
+
+align-self => chỉ áp dụng 1 flex item => ghi đè lên align-items
++) stretch center flex-start flex-end
+*/
+.special {
+  align-self: stretch; 
+  background-color: lightcoral;
+}

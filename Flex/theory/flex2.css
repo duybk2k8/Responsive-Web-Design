@@ -48,6 +48,9 @@ align-items => căn giữa theo cross
 
 align-self => chỉ áp dụng 1 flex item => ghi đè lên align-items
 +) stretch center flex-start flex-end
+
+gap => row-gap column-gap
+==> shorthand: gap
 */
 .special {
   align-self: stretch; 

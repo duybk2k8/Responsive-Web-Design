@@ -1,0 +1,52 @@
+.pricing-container{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+
+.pricing-card{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid black;
+
+  margin: 3px;
+  padding: 10px;
+}
+
+.basic-plan{
+  order:0;
+}
+
+.pro-plan{
+  order:1;
+  flex-grow: 2;
+  background: #E6ECF8;
+}
+
+.premium-plan{
+  order:2;
+  background: #F2F5FC;
+}
+
+.check{
+  color: green;
+  font-weight: bold;
+}
+
+.cross{
+  color: red;
+  font-weight: bold;
+}
+
+hr {
+  height: 2px;
+  background: black;
+  border: none;
+}
+
+.pricing-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s linear;
+}

@@ -25,5 +25,17 @@ flex-direction: row; /Default/ / column
 
 ==> reverse ngược lại: flex-direction: row-reverse  / column reverse;
 
+Syntax: flex: flex-grow flex-shrink flex-basis;
++) flex-grow => chia vách để khi nó lớn lên
+VD: .left{
+    flex-grow:1;
+}
 
+.right{
+    flex-grow:1;
+} ==> chia đôi khoảng
+
++) flex-shrink quyết định phần tử co lại bao nhiêu khi k đủ chỗ
+
++) flex-basis quyết định yếu tố ban đầu trc khi grow / shrink
 */

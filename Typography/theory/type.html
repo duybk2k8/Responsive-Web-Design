@@ -1,0 +1,65 @@
+<!--
+Typeface: Arial => họ kiểu chữ
+
+Font: Arial Regular 12 pt
+Font: Arial Bold 14 pt
+Font: Arial Italic 10 pt
+===> kiểu chữ cụ thể
+
++) serif: có chân, đẹp, văn chương
++) sans-serif: k có chân, hiện đại
+==> classification chứ kph 1 loại cụ thể
+
+
+==> font-family => để nhiều cái cx dc 
+
+
+@font-face ==> tải font từ ngoài về
+@font-face {
+  font-family: "MyCustomFont";
+}
+
+@font-face {
+  font-family: "MyCustomFont"; 
+  src: url("path/to/font.woff2"),
+    url("path/to/font.woff"),
+    url("path/to/font.otf");
+}
+
+@font-face {
+  font-family: "MyCustomFont"; 
+  src: url("path/to/font.woff2") format("woff2"),
+    url("path/to/font.otf") format("opentype"),
+    url("path/to/font.woff") format("woff");
+}
+
+(có thể có format cx dc, k cx dc)
+
+
+@font-face {
+  font-family: "MyCustomFont"; 
+  src: url("path/to/font.woff2") format("woff2"),
+    url("path/to/font.otf") format("opentype") tech(color-COLRv1),
+    url("path/to/font.woff") format("woff");
+}
+tech cx optional
+
+Google Fonts / Font Squirrel
+
+text-shadow: /* Values */
+X Y
+X offset, Y offset, blur radius, color
+VD:
+p {
+  text-shadow: 3px 2px 3px #00ffc3;
+}
+X, Y âm cũng dc, nó sẽ lên trên thay vì xuống dưới
+
+Có nhiều shadow cx dc => nó sẽ apply theo layer
+p {
+  text-shadow: 
+    3px 2px 3px #00ffc3, 
+    -3px -2px 3px #0077ff, 
+    5px 4px 3px #dee7e5;
+}
+-->

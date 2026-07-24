@@ -1,0 +1,37 @@
+a {
+  display: block;
+}
+
+a[href] {
+  color: blue;
+  text-decoration: underline;
+}
+/*cái nào có href thì sẽ trang trí*/
+
+a[title] {
+  font-weight: bold;
+  text-decoration: none;
+}
+/*cái nào có title thì trang trí
+
+Combine:*/
+a[href][title] {
+  display:block;
+  color: green;
+}
+
+a[class~="primary"] {
+  color: red;
+  font-weight: bold;
+}
+/*[attr~=value] ==> lấy con nào có primary là 1 trong các class*/
+
+a[href$=".com"] {
+  color: darkgreen;
+  text-decoration: underline dotted;
+}
+/*con nào có href đuôi .com
+
+
+a[href^="https://"] => đầu là http*/
+

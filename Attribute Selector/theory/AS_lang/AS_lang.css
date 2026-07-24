@@ -1,0 +1,14 @@
+p[lang="en"] {
+  font-style: italic;
+}
+/*chỉ có cái nào lang = en*/
+
+p[data-lang="fr"] {
+  color: blue;
+}
+/*data-lang custom cx dc => VD: python*/
+
+/*
+p[class="read"] => p nào chỉ có 1 class là read
+p[class~="read"] => p nào nhiều class trong đó có 1 cái là read là dc r
+*/

@@ -1,0 +1,30 @@
+<!--
++) absolute => k bị ảnh hưởng, có thể đè => giống menu dropdown
+VD:
+.positioned {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: coral;
+}
+==> tuy nhiên khi scroll nó vẫn ở vị trí đó
+Nó dựa vào phần tử cha gần nhất có position khác static
+nếu k có thì sẽ lấy viewport => k cuộn theo trang
+
++) position: fixed => luôn căn theo viewport
+=> nó giữ nguyên, remove from document flow và stay dù có scroll => luôn đứng 1 vị trí
+VD:
+h1 {
+  position: fixed;
+  top: 0;
+  width: 500px;
+  background: white;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
++) position: sticky
+=> kết hợp
+Ban đầu nó sẽ relative, ở cùng flow, nhưng nếu scroll qua 1 certain point, nó sẽ stick to the viewport (thường là top)
+=> như fix => nav bars, chỉ fixed khi scoll một vài thứ
+-->

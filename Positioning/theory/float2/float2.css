@@ -1,0 +1,18 @@
+.container {
+  border: 1px solid black;
+}
+
+/* Clearfix CSS */
+.container::after {
+  content: "";  
+  display: block;
+  clear: both;
+} /*tạo 1 phần tử ovo hình để nó biết có thứ ở dưới
+content là để nó k display content nào
+display block để nó là block level
+clearboth để nó nằm dưới mọi phần tử float*/
+
+img {
+  float: left;
+  margin-right: 20px;
+}

@@ -6,6 +6,7 @@ table{
   padding: 45px;
 }
 
+
 .heading{
   font-weight: bold;
   background-image: linear-gradient(#e9f8ff, #74c9f3);
@@ -62,7 +63,7 @@ tr[class="read"] span[class="status"]{
 );
 }
 
-span[class="status"], span[class^="rate"]{
+span[class="status"]{
   height: 15px;
   padding: 1px;
   border-radius: 9px;
@@ -72,6 +73,12 @@ span[class="status"], span[class^="rate"]{
   width: 90px;
   text-align: center;
   margin: 10px 20px 10px 20px;
+}
+
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
 
 span {

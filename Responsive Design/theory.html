@@ -1,0 +1,49 @@
+<!--
+
+[MEDIA QUERY]
+Media query áp dụng style theo kích thước màn hình k đổi cấu trúc
+
+@media mediatype and (feature: value) {
+  /* CSS rules go here */
+}
+
+với điều kiện feature: value thì nó mới áp dụng
+VD: 
+- min- max- của width height
+- aspect-ration: tỉ lệ giữa width - height của viewport => aspect-ratio: 16/9
+- orientation => nó là landscape hay portrate orientation => orientation: landscape
+- resolution: min-resolution: 300dpi
+- hover: nếu có thể hover dc => hover: hover
+- prefers-color-scheme: xem ng dùng có prefer j k => prefers-color-scheme: dark;
+
+Combine:
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  /* Styles for landscape screens at least 768px wide */
+}
+
+Target multiple
+@media screen and (min-width: 768px), print {
+  /* Styles for screens at least 768px wide OR for print */
+}
+
+[MEDIA BREAKPOINT]
+- Query là cách viên, còn breakpoint là con số trong media query
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+  => 768 là breakpoint
+
+Extra small device: under 576px.
+
+Small device: more than or equal to 576px.
+
+Medium device: more than or equal to 768px.
+
+Large device: more than or equal to 992px.
+
+Extra large device: more than or equal to 1200px.
+
+Extra extra large device: more than or equal to 1400px.
+-->

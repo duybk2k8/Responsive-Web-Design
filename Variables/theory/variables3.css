@@ -1,0 +1,53 @@
+@property --gradient-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.gradient-box {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(var(--gradient-angle), red, blue);
+  transition: --gradient-angle 0.5s;
+}
+
+.gradient-box:hover {
+  --gradient-angle: 90deg;
+}
+/*allow animation*/
+
+/*FALLBACK*/
+:root {
+  --main-color: #3498db;
+}
+
+@property --main-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3498db;
+}
+
+body {
+  background-color: var(--main-color);
+}
+/*đây là kiểu traditional => cái nào support @property thì sẽ dùng cái nào dc strictly design*/
+
+.button {
+  background-color: var(--main-color, #3498db);
+}
+
+
+@property --padding {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: darkred;
+  color: white;
+  padding: var(--padding);
+}
+/*nếu ai đó set --padding ra 1 loại khác như kiểu color => nó sẽ fall về initial value là 10px*/

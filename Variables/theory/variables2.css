@@ -1,0 +1,24 @@
+/*@property => đăng kí 1 custom property
+cái ở 1: nó chỉ là lưu giá trị, CSS k biểu diễn dữ liệu của biến, k bt đúng sai
+=> cái này nó nhận diện dc dạng, để giá trị mặc định và có nhiều cú pháp hơn
+syntax:
+@property --property-name {
+  syntax: '<type>';
+  inherits: true | false;
+  initial-value: <value>;
+}
+
+syntax: <color>, <length>, <number>, <percentage>, ...
+inherits: nó có inherit từ parent
+initial-value: default value
+*/
+
+@property --main-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3498db;
+}
+
+.button {
+  background-color: var(--main-color);
+}

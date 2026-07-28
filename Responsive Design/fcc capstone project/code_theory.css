@@ -1,0 +1,63 @@
+
+body{
+  font-family: sans-serif;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    line-height: 1.5;
+  }
+}
+
+header{
+  font-size: 30px;
+}
+
+p{
+  margin-top: 0;
+}
+
+p, li{
+  margin-left: 20px;
+  color: #4D4E53;
+}
+
+code{
+  display: block;
+  background-color: #F5F6F7;
+  padding: 20px;
+}
+
+section{
+  margin-bottom: 30px;
+}
+
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 300px;
+  height: 100vh;
+  
+  overflow-y: auto;
+  border-right: 3px solid black;
+}
+
+#main-doc{
+  margin-left: 320px;
+  padding: 20px;
+}
+
+.nav-link{
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  color:#4D4E53;
+}
+
+.table{
+  display: none;
+}

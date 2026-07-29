@@ -4,6 +4,8 @@
 
 .feature-article{
   grid-area: feature-article;
+  padding: 20px;
+  background-color: #F9F9F9;
 }
 
 .secondary-article{
@@ -16,14 +18,20 @@
 
 .small-article1{
   grid-area: small-article1;
+  padding: 20px;
+  background-color: #E9E9E9;
 }
 
 .small-article2{
   grid-area: small-article2;
+  padding: 20px;
+  background-color: #E9E9E9;
 }
 
 .small-article3{
   grid-area: small-article3;
+  padding: 20px;
+  background-color: #E9E9E9;
 }
 
 .newspaper-layout{
@@ -39,5 +47,34 @@
 }
 
 .cover-image img{
-  max-width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.cover-image{
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif, serif;
+}
+
+body{
+    padding: 20px;
+}
+
+h1{
+    padding: 30px;
+    background-color: rgb(27, 27, 50);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+*:not(h1){
+    text-align: justify;
 }

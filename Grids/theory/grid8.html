@@ -1,0 +1,28 @@
+<!--đặt tên cho dễ nhớ => grid-template-areas
+=> chia bố cục
++) grid-template-areas:
+ 'header header header' => tên của grid area, chia space là từng column, mỗi cùng mỗi tên
+ 'left-sidebar main right-sidebar'
+ 'footer footer footer';
+
+ Holy Grail layout => header, foooter, two sidebars, main content area
+
++) grid-area => gán item vào 1 vùng đã đặt tên
+=> có thể dùng riêng biệt
+ -->
+<link rel="stylesheet" href="grid8.css">
+<div class="grid-container">
+  <div class="header">
+    <h2>Header</h2>
+  </div>
+  <div class="sidebar-left">
+    <h2>Left Sidebar</h2>
+  </div>
+  <div class="main"><h2>Main Content</h2></div>
+  <div class="sidebar-right">
+    <h2>Right Sidebar</h2>
+  </div>
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+</div>

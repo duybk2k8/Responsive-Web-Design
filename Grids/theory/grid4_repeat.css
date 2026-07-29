@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+}
+
+/*repeat(số lần repeat, đơn vị)
+
+repeat(2, 20px 1fr) => lặp 2 lần
+==> cột 1 và 3 sẽ là 20px cột 2 4 sẽ là 20px*/

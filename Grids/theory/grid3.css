@@ -8,3 +8,14 @@
 .grid-container div {
   background-color: darkblue;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 10px; /*k dc dùng fr*/
+}
+
+.grid-container div {
+  height: 100px;
+  background-color: darkblue;
+}

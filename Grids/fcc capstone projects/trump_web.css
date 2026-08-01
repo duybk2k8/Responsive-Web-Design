@@ -1,0 +1,103 @@
+*{
+  background-color: #EEEEEE
+}
+
+body{
+  font-family: Helvetica;
+}
+
+@media (max-width: 768px){
+  *{line-height: 1.2;}
+}
+
+#header{
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+}
+
+.nav-link{
+  margin: 15px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+img{
+  width: 250px;
+}
+
+h1{
+  text-align: center;
+  font-size: 23px;
+}
+
+#email{
+  padding-left: 10px;
+  height: 30px;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+
+#submit{
+  display: block;
+  margin: 15px auto;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #F1C40F;
+}
+
+.icon{
+  height: 50px;
+  width: auto;
+  margin: auto;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.video{
+  display: block;
+  margin: auto;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.choice-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.choice{
+  padding: 10px;
+  border: 1px black solid;
+  text-align: center;
+  height: 350px;
+}
+
+.contact{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background-color: #F1C40F;
+  border: 1px solid black;
+}
+
+h3{
+  padding: 10px;
+  background-color:#DDDDDD;
+}
+
+h4{
+  font-weight: 600;
+  font-size: 30px;
+}

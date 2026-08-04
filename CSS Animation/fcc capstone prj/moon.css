@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  background-color: black;
+}
+
+.earth{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.orbit{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+  animation: orbit 5s linear infinite;
+}
+
+.moon{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+}
+
+@keyframes orbit{
+  0%{
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  100%{
+    transform: rotate(360deg) translate(-50%, -50%); /*phải cho translate để nó k bị rotate đè*/
+  }
+}
+
